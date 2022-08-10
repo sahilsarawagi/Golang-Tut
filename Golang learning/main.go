@@ -1,7 +1,7 @@
 package main
 
-import "fmt"
-
+import ("fmt"
+)
 func main(){
 	// intializing variable and Constants
 	var confrenceName = "Python Confrence"  // you can change the var datatype  
@@ -59,4 +59,40 @@ func main(){
 	remainingTicket=remainingTicket-userTicket
 	fmt.Printf("%v booked %v tickets",userName,userTicket)
 
-}
+	// Go has only one type of loop --> That is for loop (we can use it as infinite loop or while loop also)
+
+	// Infinite loop doesn't take any arguments 
+	// for  {
+	// 	// This will run for infite time
+	// }
+
+	// Normal for loop
+	for i := 0; i < 3; i++ {
+		fmt.Println("helo")
+	}
+
+	//for loop as while loop
+k:=0
+	for k < 3 {
+		k += 2
+	 }
+   fmt.Println(k) 
+	  // Declaring array 
+	  anime:= []string{"Sasuke", "Naruto", "Sasuke and Naruto"} 
+      
+	  // i and j stores the value of anime
+	  // i store index number of individual string and
+	  // j store individual string of the given array
+	  for i, j:= range anime {
+		 fmt.Println(i, j)             
+	  }
+	  
+	  for _, j:= range anime {      // use _ to declare unused variable
+		 fmt.Println(j)             
+	  }
+	  
+
+
+
+ }
+
